@@ -1,0 +1,45 @@
+import java.io.IOException;
+	import java.util.Scanner;
+
+	public class Main {
+
+	    public static void main(String[] args) {
+	        Scanner input = new Scanner(System.in);
+	        
+	        //Variáveis
+	        int repete, numero;
+	      
+	        //Leia o numero que irá determinar o laço
+	        repete = input.nextInt();
+
+	        //Inicio do laço
+	        for (int i=0; i<repete; i++) {
+	        //leia o numero que vai ser comparado
+	        	numero = input.nextInt();
+	        	
+	        	//Se numero igual a zero, então imprime null
+	            if (numero == 0) {
+	                System.out.println("NULL");
+	            }
+	            //Se numero não for igual a zero muda a condição, então
+	            else {
+	            	
+	            // se resto da divsão do numero por 2 = 0, então imprime EVEN
+	            if (numero % 2 == 0) {
+	                System.out.print("EVEN ");
+	            }
+	            //se resto da divsão do numero por 2 diferente de 0, então imprime odd
+	            else {
+	                System.out.print("ODD ");
+	            }
+	            // se o numero for maior que zero então imprime psitivo
+	            if (numero > 0) {
+	                System.out.println("POSITIVE");
+	            }
+	            //se numero for menor que zero imprime negativo
+	            else {
+	                System.out.println("NEGATIVE");
+	            }}
+	        }
+	    }
+}
